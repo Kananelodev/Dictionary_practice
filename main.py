@@ -3,7 +3,7 @@
 def highest_mark(plea):
   return max(plea, key=plea.get)
         
-# print(highest_mark( {'Tom':67, 'Jerry':89, 'Mickey':95, 'Donald':80} ))
+print(highest_mark( {'Tom':67, 'Jerry':89, 'Mickey':95, 'Donald':80} ))
 
 #Question 2
 
@@ -26,13 +26,13 @@ def merge(plea, pleas):
 
 def remove_key(plea, key):
     # del plea[key]
-    for i, keys in plea.items():
-        if key in plea:
-           del plea[key]
-           return plea
-        else:
-           return f'Key not found'
-   
+   for i, keys in plea.items():
+      if key in plea:
+         del plea[key]
+         return plea
+      else:
+         return f'Key not found'
+
 
 # print(remove_key( {'p':5, 'q':6}, key='z'))
 
